@@ -68,24 +68,6 @@ This makes **LabRI_shiny_connect** the preferred implementation for institutiona
 
 ---
 
-## 𝗟𝗮𝗯𝗥𝗜 𝗣𝗼𝘀𝗶𝘁 𝗖𝗼𝗻𝗻𝗲𝗰𝘁 𝗖𝗹𝗼𝘂𝗱
-
-**LabRI Posit Connect Cloud** refers to the deployment-oriented implementation of the LabRI Shiny Application prepared for cloud execution through Posit infrastructure.
-
-The objective of this implementation is to make the LabRI method available through a browser-based interface without requiring the end user to download, decompress, configure, or run a local application folder.
-
-This implementation is particularly useful for:
-
-- cloud-based demonstration of the LabRI method;
-- training and educational use;
-- institutional access through Posit Connect;
-- controlled use by laboratories, research groups, or scientific societies;
-- environments where local installation is not desirable or not feasible.
-
-Because cloud environments may have memory limitations, especially in free-tier deployments, large analyses may require either a reduced maximum subsample size or a Posit Connect environment with higher RAM availability. The cloud implementation is optimized to avoid unnecessary server-side file persistence, but the analytical workflow can still be computationally demanding for large datasets and complex reports.
-
----
-
 ## 𝗨𝘀𝗲𝗿 𝗶𝗻𝘁𝗲𝗿𝗳𝗮𝗰𝗲
 
 The image below provides an example of the initial interface of the **LabRI Shiny Connect** application, demonstrating how users configure essential parameters for data analysis.
