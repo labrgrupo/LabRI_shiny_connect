@@ -258,9 +258,3 @@ alancdias@hotmail.com or labrgrupo@gmail.com
 This project is distributed under the GPL-3.0 license.
 
 ---
-
-## 𝗟𝗶𝗰𝗲𝗻𝘀𝗲
-
-This project is distributed under the GPL-3.0 license.
-
----
