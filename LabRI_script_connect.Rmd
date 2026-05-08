@@ -10509,7 +10509,7 @@ Fig.22
 
 
 CI_RI_LabRI$plot(
-  "Fig. 23. Confidence intervals for LabRI method via parametric bootstrap using Monte Carlo simulation"
+  "Fig. 23. CI for LabRI method via parametric bootstrap using Monte Carlo simulation"
 )
 
 
