@@ -164,31 +164,6 @@ The **Verification Module** performs a **three-level analysis** to assess whethe
 
 ---
 
-## 𝗖𝗹𝗼𝘂𝗱 𝗱𝗲𝗽𝗹𝗼𝘆𝗺𝗲𝗻𝘁 𝗹𝗼𝗴𝗶𝗰
-
-The cloud implementation of LabRI was designed to avoid server-side accumulation of user-generated files. This is important because web applications may be accessed by multiple users, and each user may upload different datasets and generate different reports.
-
-In **LabRI_shiny_connect**, output generation follows this principle:
-
-```text
-Render in the browser whenever possible.
-Use temporary files only when required by R Markdown.
-Avoid persistent automatic exports to server folders.
-Allow user-controlled download only when appropriate.
-```
-
-This design makes the tool more suitable for:
-
-- Posit Connect deployment;
-- Posit Cloud testing;
-- institutional Shiny servers;
-- multi-user access;
-- cloud-based demonstrations;
-- training and educational use;
-- controlled deployment by scientific societies, laboratories, or research groups.
-
----
-
 ## 𝗥𝗲𝗽𝗼𝗿𝘁 𝗴𝗲𝗻𝗲𝗿𝗮𝘁𝗶𝗼𝗻
 
 The HTML report is generated through `rmarkdown::render()`. Because R Markdown requires a physical HTML file to be produced before it can be displayed, **LabRI_shiny_connect uses a temporary session file**.
