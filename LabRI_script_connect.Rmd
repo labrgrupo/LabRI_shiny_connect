@@ -11871,7 +11871,7 @@ plot_UL_IE <- ggplot() +
     aes(
       x = Bias_LS,
       y = Limite_Referencia,
-      color = "90% Confidence Interval of the URL"
+      color = paste(IC_IR_select2*100,"Confidence Interval of the URL")
     ),
     size = 6
   ) +
@@ -11882,7 +11882,7 @@ plot_UL_IE <- ggplot() +
       x = Bias_LS,
       xmin = LL_IC_URL,
       xmax = UL_IC_URL,
-      color = "90% Confidence Interval of the URL"
+      color = paste(IC_IR_select2*100,"Confidence Interval of the URL")
     ),
     height = 0.2,
     size = 1.5
@@ -11901,7 +11901,7 @@ plot_UL_IE <- ggplot() +
   ) +
   scale_color_manual(
     name = "Legend",
-    values = c("90% Confidence Interval of the URL" = "blue2")
+    values = c(paste(IC_IR_select2*100,"Confidence Interval of the URL") = "blue2")
   ) +
   labs(
     title = titulo.fig.25,
@@ -11981,7 +11981,7 @@ plot_LL_IE <- if (isTRUE(lado == "Right_sided")) {
       aes(
         x = Bias_LI,
         y = Limite_Referencia,
-        color = "90% Confidence Interval of the LRL"
+        color = paste(IC_IR_select2*100,"Confidence Interval of the LRL")
       ),
       size = 6
     ) +
@@ -11992,7 +11992,7 @@ plot_LL_IE <- if (isTRUE(lado == "Right_sided")) {
         x = Bias_LI,
         xmin = LL_IC_LRL,
         xmax = UL_IC_LRL,
-        color = "90% Confidence Interval of the LRL"
+        color = paste(IC_IR_select2*100,"Confidence Interval of the LRL")
       ),
       height = 0.2,
       size = 1.5
@@ -12011,7 +12011,7 @@ plot_LL_IE <- if (isTRUE(lado == "Right_sided")) {
     ) +
     scale_color_manual(
       name = "Legend",
-      values = c("90% Confidence Interval of the LRL" = "blue2")
+      values = c(paste(IC_IR_select2*100,"Confidence Interval of the LRL") = "blue2")
     ) +
     labs(
       x = "Difference Between LRLs (or Effect Size<sub>LRLs</sub>)",
