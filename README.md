@@ -48,15 +48,16 @@ From a fork, users can:
 
 ---
 
-## 𝗖𝗹𝗼𝘂𝗱-𝗰𝗼𝗺𝗽𝗮𝘁𝗶𝗯𝗹𝗲 𝗱𝗲𝘀𝗶𝗴𝗻
+## 🌐 𝗟𝗼𝗰𝗮𝗹 𝗲𝘅𝗲𝗰𝘂𝘁𝗶𝗼𝗻 𝘃𝘀. 𝗰𝗹𝗼𝘂𝗱-𝗿𝗲𝗮𝗱𝘆 𝘃𝗲𝗿𝘀𝗶𝗼𝗻
 
-The [**Shiny application for local execution**](https://github.com/labrgrupo/LabRI_shiny) automatically creates `3_Outputs/Figures/`, `3_Outputs/Spreadsheets/`, and `4_Report_HTML/` and writes figures, spreadsheets, intermediate files, and reports to disk — appropriate for single-user desktop workflows.
+The LabRI Shiny tool is distributed in **two complementary implementations** that share the same analytical method but differ in their output-management strategy:
 
-This behavior is unsuitable for cloud hosting, where multiple users share a single application directory. **LabRI_shiny_connect** therefore operates in session-based mode: outputs are rendered inside the Shiny interface or in temporary session files only, and the user may download the final HTML report manually. The analytical method is unchanged; only the output architecture differs.
+- ****[LabRI Shiny Application](https://github.com/labrgrupo/LabRI_shiny)** LabRI Shiny Application (this repository)** — runs locally after R and RStudio are installed. Automatically creates `3_Outputs/Figures/`, `3_Outputs/Spreadsheets/`, and `4_Report_HTML/` and writes figures, spreadsheets, intermediate files, and HTML reports to disk. Appropriate for **single-user desktop workflows**.
+- **LabRI_shiny_connect** — cloud-ready implementation for **Posit Connect**, **Posit Cloud**, or institutional Shiny servers. Operates in **session-based mode**, with no persistent files written to the server directory. Outputs are rendered inside the Shiny interface or in temporary session files, and the HTML report can be downloaded manually by the user.
 
-This behavior is unsuitable for cloud hosting, where multiple users share a single application directory. **LabRI_shiny_connect** therefore operates in session-based mode: outputs are rendered inside the Shiny interface or in temporary session files only, and the user may download the final HTML report manually. The analytical method is unchanged; only the output architecture differs.
+A public demonstration of the cloud-ready version is available at **[labrgroup-labri.share.connect.posit.cloud](https://labrgroup-labri.share.connect.posit.cloud/)** (Posit Connect Cloud Free plan — intended as a showcase only, not for production use).
 
-| Feature | Shiny application for local execution (LabRI_script.Rmd) | LabRI_shiny_connect.Rmd |
+| Feature | LabRI Shiny Application (local execution) | LabRI_shiny_connect |
 |---|---:|---:|
 | Runs on the user's computer | Yes | Optional |
 | Requires prior installation of R and RStudio | Yes | No (for end users in a deployed cloud environment) |
@@ -70,7 +71,7 @@ This behavior is unsuitable for cloud hosting, where multiple users share a sing
 | Displays report in the Shiny interface | Yes | Yes |
 | Browser-based use without local execution | No | Yes |
 
-This makes **LabRI_shiny_connect** the preferred implementation for institutional deployment, cloud-based demonstrations, training environments, and multi-user access.
+The **analytical method is identical** in both implementations; only the output architecture differs. The local version is preferred for individual analytical work and for processing larger datasets without cloud memory constraints, while the cloud-ready version is preferred for institutional deployment, demonstrations, training environments, and multi-user access.
 
 ---
 
