@@ -50,7 +50,9 @@ From a fork, users can:
 
 ## 𝗖𝗹𝗼𝘂𝗱-𝗰𝗼𝗺𝗽𝗮𝘁𝗶𝗯𝗹𝗲 𝗱𝗲𝘀𝗶𝗴𝗻
 
-The **Shiny application for local execution** automatically creates `3_Outputs/Figures/`, `3_Outputs/Spreadsheets/`, and `4_Report_HTML/` and writes figures, spreadsheets, intermediate files, and reports to disk — appropriate for single-user desktop workflows.
+The [**Shiny application for local execution**](https://github.com/labrgrupo/LabRI_shiny) automatically creates `3_Outputs/Figures/`, `3_Outputs/Spreadsheets/`, and `4_Report_HTML/` and writes figures, spreadsheets, intermediate files, and reports to disk — appropriate for single-user desktop workflows.
+
+This behavior is unsuitable for cloud hosting, where multiple users share a single application directory. **LabRI_shiny_connect** therefore operates in session-based mode: outputs are rendered inside the Shiny interface or in temporary session files only, and the user may download the final HTML report manually. The analytical method is unchanged; only the output architecture differs.
 
 This behavior is unsuitable for cloud hosting, where multiple users share a single application directory. **LabRI_shiny_connect** therefore operates in session-based mode: outputs are rendered inside the Shiny interface or in temporary session files only, and the user may download the final HTML report manually. The analytical method is unchanged; only the output architecture differs.
 
