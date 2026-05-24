@@ -54,7 +54,7 @@ The **Shiny application for local execution** automatically creates `3_Outputs/F
 
 This behavior is unsuitable for cloud hosting, where multiple users share a single application directory. **LabRI_shiny_connect** therefore operates in session-based mode: outputs are rendered inside the Shiny interface or in temporary session files only, and the user may download the final HTML report manually. The analytical method is unchanged; only the output architecture differs.
 
-| Feature | Shiny application for local execution | LabRI_shiny_connect |
+| Feature | LabRI_script.Rmd | LabRI_shiny_connect.Rmd |
 |---|---:|---:|
 | Runs on the user's computer | Yes | Optional |
 | Requires prior installation of R and RStudio | Yes | No (for end users in a deployed cloud environment) |
