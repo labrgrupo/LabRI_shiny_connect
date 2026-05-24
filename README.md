@@ -28,7 +28,7 @@ To illustrate how the LabRI Shiny Connect application can be made available as a
 ### 👇 **Click here to access the LabRI Shiny Connect live demo** 👇
 
 <a href="https://labrgroup-labri.share.connect.posit.cloud/" target="_blank">
-  <img src="https://img.shields.io/badge/Launch%20LabRI%20Demo-%230070C0?style=for-the-badge&logo=posit&logoColor=white" alt="LabRI Live Demo" style="height: 50px;">
+  <img src="https://img.shields.io/badge/Launch%20LabRI%20Demo-%23009C3B?style=for-the-badge&logo=posit&logoColor=%23009C3B&labelColor=%23FFDF00" alt="LabRI Live Demo" style="height: 50px;">
 </a>
 
 </div>
