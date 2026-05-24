@@ -213,14 +213,14 @@ This does not necessarily indicate a problem with the dataset or with the LabRI 
 
 ## 𝗧𝘂𝘁𝗼𝗿𝗶𝗮𝗹
 
-A simple usage tutorial, covering the installation of R and RStudio and instructions for using the Shiny tool, can be found on the **Grupo Lab R website**:
+A simple usage tutorial, covering the installation of R and RStudio and instructions for using the Shiny tool, is available on the **Grupo Lab R website**, which centralizes the documentation, tutorials, and supporting materials for the LabRI System and other tools developed by the group.
 
 <div align="center">
 
-### 👇 **Click here to access the LabRI Tutorial** 👇
+### 👇 **Click here to visit the Grupo Lab R website** 👇
 
 <a href="https://grupolabr.com/" target="_blank">
-  <img src="https://img.shields.io/badge/Launch%20LabRI%20Demo-%23009C3B?style=for-the-badge&logo=posit&logoColor=%23009C3B&labelColor=%23FFDF00" alt="Lab R site" style="height: 50px;">
+  <img src="https://img.shields.io/badge/Visit%20Grupo%20Lab%20R%20Website-%23009C3B?style=for-the-badge&logo=google-chrome&logoColor=%23009C3B&labelColor=%23FFDF00" alt="Grupo Lab R Website" style="height: 50px;">
 </a>
 
 </div>
