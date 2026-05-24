@@ -219,8 +219,8 @@ A simple usage tutorial, covering the installation of R and RStudio and instruct
 
 ### 👇 **Click here to access the LabRI Tutorial** 👇
 
-<a href="https://grupolabr.com/LabRI_Packed.html" target="_blank">
-  <img src="https://img.shields.io/badge/Site LabR Group -%233ccd96?style=for-the-badge&logo=google-chrome&logoColor=%230d02b4&labelColor=%23fee21d" alt="LabRI Tutorial" style="height: 50px;">
+<a href="https://grupolabr.com/" target="_blank">
+  <img src="https://img.shields.io/badge/Launch%20LabRI%20Demo-%23009C3B?style=for-the-badge&logo=posit&logoColor=%23009C3B&labelColor=%23FFDF00" alt="Lab R site" style="height: 50px;">
 </a>
 
 </div>
