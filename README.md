@@ -5,7 +5,7 @@
 
 <img src="www/Logo.svg" width="350px" height="250px" align="right"/>
 
-The **LabRI Shiny Connect** application is designed for the estimation and verification of reference intervals in clinical laboratories. This repository contains the cloud-ready implementation of the LabRI Shiny Application, adapted for deployment in environments such as **Posit Connect**, **Posit Cloud**, or institutional Shiny servers.
+The **LabRI Shiny Connect** application is designed for the estimation and verification of reference intervals in clinical laboratories. This repository contains the cloud-ready implementation of the LabRI Shiny Application, adapted for deployment in environments such as **Posit Connect**, **Posit Cloud**, or institutional Shiny servers. A **public demonstration** of the application is currently hosted on **Posit Connect Cloud** and can be accessed directly from the browser, without any local installation of R or RStudio.
 
 This implementation preserves the analytical structure of the **LabRI method**, while adapting the application behavior for cloud execution. In contrast to the **compressed local distribution** of the LabRI Shiny Application, **LabRI_shiny_connect does not automatically save figures, spreadsheets, intermediate files, `.RData`, `.Rhistory`, or HTML reports into persistent local output folders on the server**.
 
@@ -19,9 +19,40 @@ Depending on the deployment strategy, this repository may also include files suc
 
 ---
 
+## 🌐 𝗟𝗶𝘃𝗲 𝗱𝗲𝗺𝗼𝗻𝘀𝘁𝗿𝗮𝘁𝗶𝗼𝗻 𝗼𝗻 𝗣𝗼𝘀𝗶𝘁 𝗖𝗼𝗻𝗻𝗲𝗰𝘁 𝗖𝗹𝗼𝘂𝗱
+
+To illustrate how the LabRI Shiny Connect application can be made available as a cloud service, a public deployment is hosted on **Posit Connect Cloud**. This deployment is offered as a **demonstration instance**, allowing prospective users to interact with the LabRI method directly from a web browser before considering institutional deployment or local installation.
+
+<div align="center">
+
+### 👇 **Click here to access the LabRI Shiny Connect live demo** 👇
+
+<a href="https://labrgroup-labri.share.connect.posit.cloud/" target="_blank">
+  <img src="https://img.shields.io/badge/Launch%20LabRI%20Demo-%230070C0?style=for-the-badge&logo=posit&logoColor=white" alt="LabRI Live Demo" style="height: 50px;">
+</a>
+
+</div>
+
+The demonstration instance runs on the **Posit Connect Cloud Free plan**, which provides only limited computational resources: **4 GB of memory**, **1 CPU**, **20 monthly active hours**, and a maximum of 5 hosted applications. Because of these constraints, the public demo may exhibit **instability**, slower response times, or memory-related failures, particularly when processing **large datasets** or generating **HTML reports with many figures**. The instance is therefore intended **exclusively as a showcase** of the LabRI method in a cloud environment — **not as a production system** for routine analytical use or for processing sensitive laboratory data.
+
+For more demanding workflows or institutional use, users and organizations are encouraged to deploy their **own instance** of LabRI Shiny Connect. The recommended GitHub workflow is to **fork** the official repository — that is, to create a personal copy of the repository under the user's own GitHub account, which can then be freely modified, redeployed, and kept synchronized with the original project.
+
+🔗 **Official repository to fork:** [https://github.com/labrgrupo/LabRI_shiny_connect](https://github.com/labrgrupo/LabRI_shiny_connect)
+
+Starting from a forked copy, users can:
+
+- **Deploy on Posit Connect Cloud** using paid tiers, with higher memory and CPU allocations and greater monthly availability.
+- **Deploy on a self-hosted Posit Connect server** or on an institutional Shiny Server.
+- **Adapt `LabRI_script_connect.Rmd` and `app.R`** for deployment on other cloud platforms such as **shinyapps.io**, **AWS**, **Azure**, **Google Cloud Run**, **Hugging Face Spaces**, or **Docker-based** environments.
+- **Customize the application** to integrate with internal authentication, institutional branding, or laboratory-specific workflows, subject to the terms of the GPL-3.0 license.
+
+This fork-and-deploy workflow ensures that each institution retains **full control over its data, computational resources, and customization**, while still benefiting from updates released in the official LabRI Shiny Connect repository.
+
+---
+
 ## 𝗪𝗵𝗮𝘁 𝗺𝗮𝗸𝗲𝘀 𝗟𝗮𝗯𝗥𝗜_𝘀𝗵𝗶𝗻𝘆_𝗰𝗼𝗻𝗻𝗲𝗰𝘁 𝗱𝗶𝗳𝗳𝗲𝗿𝗲𝗻𝘁?
 
-The main difference between **LabRI_shiny_connect** and the **Shiny application for local execution** is the output-management strategy.
+Whether running on the public demonstration instance or on a forked, institutionally deployed version, the main difference between **LabRI_shiny_connect** and the **Shiny application for local execution** is the output-management strategy.
 
 The local implementation was designed to run on the user's computer after prior installation of R and RStudio. In this configuration, the application source code is made available through GitHub or as a compressed local distribution, allowing users to run the LabRI Shiny Application locally and providing greater flexibility for those familiar with the R environment.
 
@@ -165,7 +196,7 @@ This approach preserves the complete HTML report while avoiding unnecessary serv
 
 ## 𝗠𝗲𝗺𝗼𝗿𝘆 𝗮𝗻𝗱 𝗰𝗹𝗼𝘂𝗱 𝗹𝗶𝗺𝗶𝘁𝗮𝘁𝗶𝗼𝗻𝘀
 
-The LabRI workflow can be computationally demanding because it performs reference interval estimation, mixture modeling, confidence interval estimation, graphical rendering, and report generation.
+The LabRI workflow can be computationally demanding because it performs reference interval estimation, mixture modeling, confidence interval estimation, graphical rendering, and report generation. These limitations are particularly relevant for the **public demonstration instance** described above, which runs on the Posit Connect Cloud Free plan with only 4 GB of memory and 1 CPU.
 
 In low-memory cloud environments, especially free-tier services, the final HTML report conversion step may require more memory than the statistical calculations themselves. For this reason, very large datasets or reports containing many figures, interactive plots, or large HTML tables may exceed the available memory.
 
@@ -174,7 +205,7 @@ If a memory limitation occurs during report generation, users are advised to:
 - reduce the maximum subsample size;
 - use a smaller dataset for cloud demonstration purposes;
 - use the Shiny application for local execution for larger analyses;
-- deploy the application in a Posit Connect environment with more RAM.
+- fork the repository and deploy the application in a Posit Connect environment with more RAM, or on an alternative cloud platform of their choice.
 
 This does not necessarily indicate a problem with the dataset or with the LabRI method. It usually reflects the memory limit of the cloud environment used to render the HTML report.
 
