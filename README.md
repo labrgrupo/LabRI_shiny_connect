@@ -25,8 +25,8 @@ A public deployment is available on **Posit Connect Cloud** as a demonstration i
 
 ### 👇 **Click here to access the LabRI Shiny Connect live demo** 👇
 
-<a href="https://labrgroup-labri.share.connect.posit.cloud/" target="_blank">
-  <img src="https://img.shields.io/badge/Launch%20LabRI%20Demo-%23009C3B?style=for-the-badge&logo=google-chrome&logoColor=%23009C3B&labelColor=%23FFDF00" alt="LabRI Live Demo" style="height: 50px;">
+<a href="https://labrgroup-labri.share.connect.posit.cloud/" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/%20-Launch%20LabRI%20Demo-%23009C3B?style=flat-square&logo=googlechrome&logoColor=%23009C3B&labelColor=%23FFDF00" alt="Launch the LabRI live demo on Posit Connect Cloud" style="height: 50px;">
 </a>
 
 </div>
